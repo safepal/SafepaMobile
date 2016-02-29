@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:fadingEdge="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/single_story_card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="2dp"
+            >
+            <!--  ListRow Left side Thumbnail image -->
+            <LinearLayout android:id="@+id/ll_single_story_actiontaken_thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/safepal_off_white"
+
+                android:layout_marginRight="5dip">
+
+                <ImageView
+                    android:id="@+id/iv_single_story_actiontaken"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:src="@drawable/ic_violence_rape_card"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_single_story_incident_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ll_single_story_actiontaken_thumbnail"
+                android:layout_toRightOf="@+id/ll_single_story_actiontaken_thumbnail"
+                android:padding="@dimen/single_story_card_tv_padding"
+                android:text="In Sseguku zone four kampala uganda"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textSize="@dimen/single_story_card_tv_small_size"
+                android:textColor="@color/colorPrimary"
+                android:ellipsize="marquee"/>
+            <TextView
+                android:id="@+id/tv_single_story_incident_post_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/single_story_card_tv_padding"
+                android:singleLine="true"
+                android:text="22m Ago"
+                android:textSize="@dimen/single_story_card_tv_small_size"
+                android:textColor="@color/app_foreground"/>
+            <TextView
+                android:id="@+id/tv_single_story_incident_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_single_story_incident_location"
+                android:layout_toRightOf="@+id/ll_single_story_actiontaken_thumbnail"
+
+                android:padding="@dimen/single_story_card_tv_padding"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+            <TextView
+                android:id="@+id/tv_single_story_incident_happened_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_single_story_incident_description"
+                android:layout_toRightOf="@+id/ll_single_story_actiontaken_thumbnail"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/single_story_card_tv_padding"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:text="Happened 2 days back"
+
+                android:textSize="@dimen/single_story_card_tv_small_size"/>
+            <TextView
+                android:id="@+id/tv_single_story_incident_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_single_story_incident_description"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:singleLine="true"
+                android:padding="@dimen/single_story_card_tv_padding"
+                android:textSize="@dimen/single_story_card_tv_small_size"
+                android:maxLength="12"
+                android:text="status: none"/>
+
+
+            <TextView
+                android:id="@+id/tv_single_story_incident_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

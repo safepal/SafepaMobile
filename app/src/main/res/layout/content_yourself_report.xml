@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lecodesoft.safepalmobile.report.YourselfReportActivity"
+    tools:showIn="@layout/activity_yourself_report">
+    <android.support.v7.widget.CardView
+        android:id="@+id/rfy_cv_essential_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fadingEdge="vertical"
+        android:layout_margin="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/form_cardview_elevation"
+        app:cardCornerRadius="@dimen/form_cardview_radius"
+        >
+        <!-- Essential information Linear layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/rfy_essential_information"
+
+                android:padding="@dimen/single_story_card_tv_padding"
+                android:layout_margin="@dimen/single_story_card_tv_padding"
+                android:textSize="@dimen/rfy_text_header"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fadingEdge="vertical"
+                android:layout_gravity="center_horizontal"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="@dimen/innerform_cardview_elevation"
+                app:cardCornerRadius="@dimen/innerform_cardview_radius"
+                >
+                <EditText
+                    android:id="@+id/rfy_et_phonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLength="14"
+                    android:hint="Your Phone Number"/>
+            </android.support.v7.widget.CardView>
+            <!-- End pf the phone number -->
+            <!-- layout of gender and age -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fadingEdge="vertical"
+                    android:layout_gravity="center_horizontal"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="@dimen/innerform_cardview_elevation"
+                    app:cardCornerRadius="@dimen/innerform_cardview_radius"
+                    >
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/rfy_spinner_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:hint="@string/rfy_hint_gender"
+                        android:textAlignment="center"
+                        />
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentTop="true"
+                    android:fadingEdge="vertical"
+                    android:layout_gravity="center_horizontal"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="@dimen/innerform_cardview_elevation"
+                    app:cardCornerRadius="@dimen/innerform_cardview_radius"
+                    >
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/rfy_spinner_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:hint="@string/rfy_hint_age"
+                        android:textAlignment="center"
+                        />
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- End of the essential information Linear layout -->
+
+    </android.support.v7.widget.CardView>
+
+    <!-- End of the essential information card view -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rfy_cv_incident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rfy_cv_essential_information"
+        android:fadingEdge="vertical"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/form_cardview_elevation"
+        app:cardCornerRadius="@dimen/form_cardview_radius"
+        android:layout_margin="2dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/single_story_card_tv_padding"
+                android:padding="@dimen/single_story_card_tv_padding"
+                android:text="@string/rfy_incident"
+                android:textSize="@dimen/rfy_text_header"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fadingEdge="vertical"
+                    android:layout_gravity="center_horizontal"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="@dimen/innerform_cardview_elevation"
+                    app:cardCornerRadius="@dimen/innerform_cardview_radius"
+                    >
+
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:fadingEdge="vertical"
+                    android:layout_gravity="center_horizontal"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="@dimen/innerform_cardview_elevation"
+                    app:cardCornerRadius="@dimen/innerform_cardview_radius"
+                    >
+                    <fragment
+                        android:id="@+id/rfy_incident_map_location_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        class="com.google.android.gms.maps.SupportMapFragment"
+                        />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="vertical"
+                android:layout_gravity="center_horizontal"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="@dimen/innerform_cardview_elevation"
+                app:cardCornerRadius="@dimen/innerform_cardview_radius"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/rfy_button_date"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/rfy_pick_date"
+                        android:onClick="showDatePickerDialog"
+                        android:backgroundTint="@color/colorPrimary"/>
+                    <Button
+                        android:id="@+id/rfy_button_time"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/rfy_pick_time"
+                        android:onClick="showTimePickerDialog"
+                        android:backgroundTint="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="vertical"
+                android:layout_gravity="center_horizontal"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="@dimen/innerform_cardview_elevation"
+                app:cardCornerRadius="@dimen/innerform_cardview_radius"
+                >
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/rfy_spinner_incident_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textAlignment="center"
+
+                    />
+            </android.support.v7.widget.CardView>
+
+            <!--ET Incident description in details-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="vertical"
+                android:layout_gravity="center_horizontal"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="@dimen/innerform_cardview_elevation"
+                app:cardCornerRadius="@dimen/innerform_cardview_radius"
+                >
+                <EditText
+                    android:id="@+id/rfy_et_incident_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:maxLines="6"
+                    android:hint="@string/rfy_incident_description"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="vertical"
+                android:layout_gravity="center_horizontal"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="@dimen/innerform_cardview_elevation"
+                app:cardCornerRadius="@dimen/innerform_cardview_radius"
+                >
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/rfy_spinner_actiontaken"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textAlignment="center"
+                    />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="vertical"
+                android:layout_gravity="center_horizontal"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="@dimen/innerform_cardview_elevation"
+                app:cardCornerRadius="@dimen/innerform_cardview_radius"
+                android:visibility="gone"
+                >
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/rfy_et_actiontaken_specify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textAlignment="center"
+
+                    />
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

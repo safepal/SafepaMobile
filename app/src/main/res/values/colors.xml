@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01a89e</color>
+    <color name="colorPrimaryDark">#022e2c</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="safepal_off_white">#ede6e4</color>
+
+    <color name="app_foreground">#d81a5a</color>
+
+    <!---
+        <color name="appbar_primary_color">#01a89e</color>
+    <color name="appbar_secondary_color">#82f7f0</color>
+    <color name="background_primary_color">#fcb040</color>
+
+    <color name="app_foreground">#d81a5a</color>
+    <color name="safepal_grayish">#808080</color>
+    <color name="safepal_white">#faf8f8</color>
+
+    <color name="safepal_off_white">#ede6e
+    -->
+</resources>

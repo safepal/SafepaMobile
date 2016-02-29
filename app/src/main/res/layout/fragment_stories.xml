@@ -1,0 +1,37 @@
+<RelativeLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_f_stories_Progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+
+        >
+
+        <ProgressBar
+            android:id="@+id/pb_f_stories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTintMode="src_atop"
+            android:progressBackgroundTint="@color/app_foreground">
+        </ProgressBar>
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_stories"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="5dp"/>
+
+</RelativeLayout>

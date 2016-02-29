@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    tools:context="com.lecodesoft.safepal.app.SingleStoryMoreDetails.SingleStoryMoreDetails"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_single_story_more_details">
+    <RelativeLayout
+        android:id="@+id/rl_ss_more_tld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_ss_more_thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:paddingRight="@dimen/fab_margin"
+            android:src="@drawable/ic_violence_rape_card"/>
+        <TextView
+            android:id="@+id/tv_ss_more_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/iv_ss_more_thumbnail"
+            android:text="Ndejje Kigowa"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_ss_more_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ss_more_location"
+            android:layout_toRightOf="@+id/iv_ss_more_thumbnail"
+            android:text="Feb 19 at 6:00 pm"/>
+    </RelativeLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    <TextView
+        android:id="@+id/tv_ss_more_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gang Rape"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/tv_ss_more_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fadsfdsa"/>
+    <TextView
+        android:id="@+id/tv_ss_more_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textStyle="bold"/>
+</LinearLayout>
